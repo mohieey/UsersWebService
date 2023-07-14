@@ -12,7 +12,7 @@ type User struct {
 }
 
 var (
-	users  map[int]*User
+	users  = make(map[int]*User)
 	nextID = 1
 )
 
